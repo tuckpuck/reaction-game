@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Reaction Game</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+
+        <style>
+            body {
+                font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                background: url(./img/star.png);
+            }
+
+            h1 {
+                color: aliceblue;
+                text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.6);
+            }
+            p {
+                color: aliceblue;
+                text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.6);
+            }
+
+            .title {
+                margin-top: 25px;
+                text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.6);
+            }
+
+            #box {
+                height: 200px;
+                width: 200px;
+                background-color: green;
+                position: relative;
+            }
+
+            #circle {
+                height: 200px;
+                width: 200px;
+                background-color: black;
+                border-radius: 100%;
+            }
+
+            #box:hover,
+            #circle:hover {
+                cursor: pointer;
+                -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.6);
+                -moz-box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.6);
+                box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.6);
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="text-center">
+            <h1 class="title">Test Your Reactions!</h1>
+            <p>Click the shapes as soon as they appear.</p>
+            <p class="bold">Your Time: <span id="time">(not attempted yet.)</span></p>
+        </div>
+
+        <div id="box"></div>
+
+        <script type="text/javascript" src="./reaction.js"></script>
+    </body>
+</html>
